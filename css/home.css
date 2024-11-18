@@ -1,0 +1,262 @@
+/* Estilos gerais para seções */
+.section-container {
+    padding: 2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Organização de conteúdo */
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+/* Texto */
+.text-side {
+    flex: 1;
+    max-width: 55%;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.text-side h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.text-side ul {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+    list-style-type: disc;
+}
+
+.text-side ul li {
+    margin-bottom: 0.5rem;
+}
+
+.text-side p {
+    margin-bottom: 1.1rem;
+    color: black;
+}
+
+/* Imagem */
+.image-container-right {
+    flex: 1;
+    max-width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container-right img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do VLibras no modo de alto contraste */
+body.high-contrast [vw-access-button] {
+    background-color: #FFD700 !important; /* Fundo amarelo */
+    border: 2px solid #000 !important;   /* Borda preta */
+}
+
+body.high-contrast [vw-access-button]:hover {
+    background-color: #FFA500 !important; /* Fundo laranja no hover */
+    color: #000 !important;               /* Texto preto */
+}
+
+
+/* Ajuste para garantir que a imagem fique dentro do container */
+.image-container {
+    flex: 1;
+    max-width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px; /* Apenas se for necessário */
+    overflow: hidden; /* Garante que nada "vaze" do container */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Garante que a imagem não ultrapasse o container */
+    border-radius: 8px; /* Apenas se for necessário */
+    object-fit: contain; /* Adapta a imagem ao espaço disponível */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ajuste de sombras */
+}
+
+
+/* Garantir que a figura e a legenda estejam bem definidas */
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 1rem 0; /* Adiciona espaço ao redor do elemento */
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Apenas se necessário */
+    margin-bottom: 0.5rem; /* Espaço entre a imagem e o texto da legenda */
+}
+
+figcaption {
+    font-size: 0.9rem; /* Tamanho adequado da fonte */
+    color: #333; /* Cor para contraste no modo normal */
+    line-height: 1.4;
+    margin: 0; /* Remove margens padrão */
+}
+
+/* Adaptação para o alto contraste */
+body.high-contrast figcaption {
+    color: #FFD700; /* Cor para alto contraste */
+}
+
+
+/* Estilo de artigos */
+article {
+    margin-bottom: 2rem;
+}
+
+article header h1,
+article header h2 {
+    margin-bottom: 1rem;
+    color: black;
+}/* Alto Contraste */
+body.high-contrast {
+    background-color: #000;
+    color: #FFD700;
+}
+
+body.high-contrast a {
+    color: #FFD700;
+    text-decoration: underline;
+}
+
+body.high-contrast header, 
+body.high-contrast footer, 
+body.high-contrast .section-container {
+    background-color: #111;
+    border: 2px solid #FFD700;
+}
+
+/* Certifique-se de estilizar os textos do footer */
+body.high-contrast footer {
+    color: #FFD700;
+}
+
+body.high-contrast footer a {
+    color: #FFD700;
+}
+
+body.high-contrast footer h4, 
+body.high-contrast footer ul li {
+    color: #FFD700;
+}
+
+body.high-contrast .section-container h1,
+body.high-contrast .section-container h2,
+body.high-contrast .section-container p,
+body.high-contrast .section-container ul li {
+    color: #FFD700;
+}
+
+body.high-contrast button {
+    background-color: #FFD700;
+    color: #000;
+    border: 2px solid #FFD700;
+}
+
+body.high-contrast button:hover {
+    background-color: #FFA500;
+}
+
+.font-control-buttons {
+    position: fixed;
+    top: 20%;
+    right: 10px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.font-control-buttons button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+.font-control-buttons button:hover {
+    background-color: white;
+    color: black;
+}
+
+.read-section {
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.read-section:hover {
+    background-color: black;
+}
+
+/* Estilos para os botões de acessibilidade */
+.accessibility-buttons button {
+    background-color: white; /* Cor de fundo branca */
+    color: #000; /* Texto preto */
+    border: 2px solid #000; /* Borda preta */
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, color 0.3s; /* Transição para efeito de hover */
+}
+
+.accessibility-buttons button:hover {
+    background-color: #e6e6e6; /* Cor de fundo cinza claro no hover */
+    color: #000; /* Texto continua preto */
+}
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+    }
+
+    .image-container, 
+    .image-container-right {
+        max-width: 100%;
+    }
+
+    .text-side {
+        max-width: 100%;
+    }
+}
